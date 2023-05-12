@@ -54,7 +54,7 @@ export async function getStaticProps() {
   let skills = [];
 
   try {
-    const response = await fetch("url from firebase");
+    const response = await fetch("https://.firebaseio.com/skills.json");
     const data = await response.json();
     skills = data.split(",");
   } catch (error) {
